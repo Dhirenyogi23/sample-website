@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySocial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MySocial</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="profile-menu">
+            <img id="image" src="./dhiren.JPG" height="50px" width="50px"  alt="Profile Picture" class="profile-pic">
+            <span class="username">Profile</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="status-update">
+                <textarea placeholder="What's on your mind?" id="status-text"></textarea>
+                <input type="file" id="image-upload" accept="image/*">
+                <input type="file" id="video-upload" accept="video/*">
+                <button id="post-status">Post</button>
+            </div>
+
+            <div id="posts">
+                <!-- Posts will appear here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
